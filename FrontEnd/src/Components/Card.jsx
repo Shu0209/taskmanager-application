@@ -14,7 +14,7 @@ function Card({ home,addTask, setAddTaskDiv, data=[],setUpdatedData}) {
 
     const handleComplete=async(id)=>{
 try {
-    await axios.put(`http://localhost:1000/api/v2/update-complete-task/${id}`,{},{headers}
+    await axios.put(`https://taskmanager-application-1.onrender.com/api/v2/update-complete-task/${id}`,{},{headers}
     );
 
     
@@ -25,7 +25,7 @@ try {
 
     const handleImportant=async(id)=>{
         try {
-            await axios.put(`http://localhost:1000/api/v2/update-imp-task/${id}`,{},
+            await axios.put(`https://taskmanager-application-1.onrender.com/api/v2/update-imp-task/${id}`,{},
                 {headers}
             );
             
@@ -36,7 +36,7 @@ try {
 
             const handleDelete=async(id)=>{
                 try {
-                    const response=await axios.delete(`http://localhost:1000/api/v2/delete-task/${id}`,
+                    const response=await axios.delete(`https://taskmanager-application-1.onrender.com/api/v2/delete-task/${id}`,
                         {headers}
                     );
                 console.log(response.data.message)

@@ -31,7 +31,7 @@ if(Data.title===""||Data.desc===""){
 }
 else {
     try {
-        await axios.post("http://localhost:1000/api/v2/create-task", Data, {
+        await axios.post("https://taskmanager-application-1.onrender.com/api/v2/create-task", Data, {
             headers,
         });
         alert("Task created successfully");
@@ -50,7 +50,7 @@ const updateTask=async()=>{
     }
     else {
         try {
-            await axios.put(`http://localhost:1000/api/v2/update-task/${UpdatedData.id}`, Data, {
+            await axios.put(`https://taskmanager-application-1.onrender.com/api/v2/update-task/${UpdatedData.id}`, Data, {
                 headers,
             });
             alert("Task Updated successfully");

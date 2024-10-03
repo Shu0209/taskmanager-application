@@ -16,7 +16,7 @@ function IncompletedTasks(props){
     useEffect(()=>{
         const fetch = async () => {
             try{
-            const response = await axios.get("http://localhost:1000/api/v2/get-incomplete-tasks",
+            const response = await axios.get("https://taskmanager-application-1.onrender.com/api/v2/get-incomplete-tasks",
                 { headers }
             );
             setData(response.data.data);

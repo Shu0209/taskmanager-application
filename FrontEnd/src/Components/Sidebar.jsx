@@ -50,7 +50,7 @@ function Sidebar(props) {
     };
     useEffect(() => {
         const fetch = async () => {
-            const response = await axios.get("http://localhost:1000/api/v2/get-all-tasks",
+            const response = await axios.get("https://taskmanager-application-1.onrender.com/api/v2/get-all-tasks",
                 { headers }
             );
             setData(response.data.data);
