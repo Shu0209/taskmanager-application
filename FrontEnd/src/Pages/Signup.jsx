@@ -39,7 +39,7 @@ function Signup() {
     return (
         <>
             <div className="w-screen h-screen flex justify-center items-center bg-gradient-to-r from-gray-500 to-gray-800 ">
-                <div className="relative w-1/2 h-3/4 rounded-3xl bg-gray-600 text-white p-4 shadow-2xl lg:w-1/4">
+                <div className="relative w-3/4 h-3/4 rounded-3xl bg-gray-600 text-white p-4 shadow-2xl lg:w-1/4">
                     <div className="flex flex-col">
                         <h1 className="text-center font-bold text-3xl m-3 lg:text-4xl">
                             Sign up
